@@ -1,0 +1,25 @@
+{
+  "name": "transparency-tools",
+  "version": "1.0.0",
+  "description": "PNG Image Editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mythius/transparency.git"
+  },
+  "author": "Matthias Southwick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mythius/transparency/issues"
+  },
+  "homepage": "https://github.com/mythius/transparency#readme",
+  "devDependencies": {
+    "electron": "^11.0.2",
+    "electron-packager": "^15.1.0",
+    "electron-winstaller": "^4.0.1"
+  }
+}
