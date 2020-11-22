@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Transparency Editor</title>
+	<script src="helpers.js"></script>
+	<style>
+		input[type=file]{
+			display: none;
+		}
+		canvas{
+			background-image: url('bg.png');
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<button id=chooseImage>Choose Your Image<input id=fu type="file"></button>
+	</div>
+	<div id="left">
+		
+	</div>
+	<div id="main">
+		<canvas id=editor></canvas>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

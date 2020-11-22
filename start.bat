@@ -1,4 +1,4 @@
 @echo off
-start http://localhost
-python server.py
+rem start http://localhost
+npm start
 pause
