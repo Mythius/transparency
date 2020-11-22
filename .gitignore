@@ -1,2 +1,4 @@
 node_modules/*
 package-lock.json
+transparency-installer/*
+transparency-win32-x64/*

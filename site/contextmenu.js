@@ -17,7 +17,7 @@ function contextmenu(element,callback,...items){
 			hide(ctx);
 		});
 	}
-	game.appendChild(ctx);
+	document.documentElement.appendChild(ctx);
 	element.on('contextmenu',function(e){
 		e.preventDefault();
 		ctx.style.left = e.clientX + 'px';

@@ -3,6 +3,11 @@
 <head>
 	<title>Transparency Editor</title>
 	<script src="helpers.js"></script>
+	<script src="input.js"></script>
+	<script src="contextmenu.js"></script>
+	<script src="prompt.js"></script>
+	<link rel="stylesheet" href="contextmenu.css">
+	<link rel="shortcut icon" href="favicon.ico">
 	<style>
 		input[type=file]{
 			display: none;
@@ -16,9 +21,11 @@
 <body>
 	<div id="top">
 		<button id=chooseImage>Choose Your Image<input id=fu type="file"></button>
+		<button id=chooseURL>Import Image from URL</button>
+		<button id=save>Save</button>
+		<input id=offset type="range" min=0 max=255 value=3>
 	</div>
 	<div id="left">
-		
 	</div>
 	<div id="main">
 		<canvas id=editor></canvas>
