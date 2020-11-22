@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const createDesktopShortcut = require('create-desktop-shortcuts');
 
-const name = "";
+const name = "transparency";
 
 function createWindow() {
     let win = new BrowserWindow({
@@ -14,15 +14,13 @@ function createWindow() {
     });
 }
 
-console.log(process.argv);
-
-if (process.argv.length > 1 && process.argv[1] != '.') {
-    const shortcutsCreated = createDesktopShortcut({
-        windows: {
-            filePath: `%appdata%\\..\\local\\${name}\\${name}.exe`,
-            icon: __dirname + '\\site\\favicon.ico'
-        }
-    });
+if(process.argv.length > 1 && process.argv[1] != '.'){
+  const shortcutsCreated = createDesktopShortcut({
+      windows: {
+          filePath: `%appdata%\\..\\local\\${name}\\${name}.exe`,
+          icon: __dirname + '\\site\\favicon.ico'
+      }
+  });
 }
 
 
