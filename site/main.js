@@ -48,11 +48,9 @@ function loadImage(inputtypefile,callback){
 }
 
 loadImage(obj('#fu'),image=>{
-	if(IMAGE){
-		saveToStack();
-	}
 	IMAGE = image;
 	drawCanvas();
+	EDIT_STACK = [];
 });
 
 function drawCanvas(){
@@ -72,6 +70,7 @@ obj('#chooseURL').on('click',async e=>{
 	img.onload = e => {
 		IMAGE = img;
 		drawCanvas();
+		EDIT_STACK = [];
 	}
 });
 

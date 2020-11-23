@@ -12,10 +12,35 @@
 		input[type=file]{
 			display: none;
 		}
+		input[type=range]{
+			transform: translateY(6px);
+			padding: 0;
+		}
 		canvas{
 			background-image: url('bg.png');
-			border: 1px solid black;
+			border: 3px solid black;
+			margin-top: 5px;
 		}
+		body{
+			background-color: #888;
+			text-align: center;
+			color: white;
+			font-family: monospace;
+		}
+		h4{
+			font-family: monospace;
+			color: white;
+		}
+		button{
+			padding: 2px 12px 2px 12px;
+		}
+		button,input{
+			background-color: #222;
+			border: 3px solid white;
+			color: white;
+			font-size: 15px;
+			font-family: monospace;
+			margin: 3px;
 	</style>
 </head>
 <body>
@@ -23,12 +48,12 @@
 		<button id=chooseImage>Choose Your Image<input id=fu type="file"></button>
 		<button id=chooseURL>Import Image from URL</button>
 		<button id=save>Save</button>
-		<input id=offset type="range" min=0 max=255 value=3>
+		<input onchange="this.title=`Color Deviation (${this.value})`" title="Color Deviation(3)" id=offset type="range" min=0 max=255 value=3>
 	</div>
 	<div id="left">
 	</div>
 	<div id="main">
-		<canvas id=editor></canvas>
+		<canvas width=798 height=398 id=editor></canvas>
 	</div>
 	<script src="main.js"></script>
 </body>

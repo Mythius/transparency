@@ -1,10 +1,10 @@
 const ask = (question='') => new Promise((resolve,reject)=>{
 	let div = create('div');
-	let h4 = create('h4',question);
+	let h2 = create('h2',question);
 	let input = create('input');
 	let button = create('button','ENTER');
 	let cancel = create('button','CANCEL');
-	div.appendChild(h4);
+	div.appendChild(h2);
 	div.appendChild(input);
 	div.appendChild(button);
 	div.appendChild(cancel);
@@ -13,7 +13,7 @@ const ask = (question='') => new Promise((resolve,reject)=>{
 	div.style.left = '50%';
 	div.style.top = '50%';
 	div.style.transform = 'translateX(-50%) translateY(-50%)';
-	div.style.backgroundColor = 'rgba(50,50,50,.5)';
+	div.style.backgroundColor = 'rgba(50,50,50,.8)';
 	div.style.padding = '30px';
 	div.style.textAlign = 'center';
 	input.on('keydown',e=>{
